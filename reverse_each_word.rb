@@ -1,6 +1,17 @@
 def reverse_each_word(string)
-    string = string.split(" ")
-    string = string.collect do |x|
+  new = []
+  string = string.split(" ")
+    string.each do |x|
+      new  << x.reverse
     end
-  string.join(" ") 
-  end
+  new = new.join(" ") 
+  new 
+end
+def reverse_each_word(string)
+  
+  string = string.split(" ")
+    string.collect do |x|
+    x.reverse
+    end
+  string.join(" ")
+end
