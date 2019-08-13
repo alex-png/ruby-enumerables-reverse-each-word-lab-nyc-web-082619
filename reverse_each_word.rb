@@ -7,11 +7,3 @@ def reverse_each_word(string)
   new = new.join(" ") 
   new 
 end
-def reverse_each_word(string)
-  
-  string = string.split(" ")
-    string.collect do |x|
-    x.reverse
-    end
-  string.join(" ")
-end
